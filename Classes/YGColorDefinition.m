@@ -150,29 +150,10 @@
 }
 
 #pragma mark - Random
-//MARK:(see: https://mikeash.com/pyblog/friday-qa-2011-03-18-random-numbers.html)
-int RandomUnder(int topPlusOne)
-{
-    unsigned two31 = 1U << 31;
-    unsigned maxUsable = (two31 / topPlusOne) * topPlusOne;
-    
-    while(1)
-    {
-        unsigned long num = random();
-        if(num < maxUsable)
-            return num % topPlusOne;
-    }
-}
 
-int RandomInRange(int bottom, int top)
-{
-    int rangeSize = top - bottom;
-    int zeroBased = RandomUnder(rangeSize);
-    return zeroBased + bottom;
-}
 + (CGFloat) randomWithin:(YGColorRange*) range
 {
-    return RandomInRange(range.min, range.max);
+    return arc4random_uniform(range.max - range.min) + range.min;
 }
 
 
