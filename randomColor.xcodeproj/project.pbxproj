@@ -14,12 +14,11 @@
 		0B023DCC1B0DFC62000FB2E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B023DCA1B0DFC62000FB2E3 /* LaunchScreen.xib */; };
 		0B023DE11B0DFDDD000FB2E3 /* ChooserTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B023DE01B0DFDDD000FB2E3 /* ChooserTableController.m */; };
 		0B023DE41B0DFF7C000FB2E3 /* ColorDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B023DE31B0DFF7C000FB2E3 /* ColorDetailsViewController.m */; };
-		0B023E091B0E11E6000FB2E3 /* UIColor+randomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B023E081B0E11E6000FB2E3 /* UIColor+randomColor.m */; };
 		0B023E0E1B0E122A000FB2E3 /* librandomColor-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B023DF01B0E11B1000FB2E3 /* librandomColor-iOS.a */; };
-		0B023E4B1B0E131E000FB2E3 /* NSColor+randomColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B023E491B0E131E000FB2E3 /* NSColor+randomColor.h */; };
-		0B023E4D1B0E135E000FB2E3 /* YGColorDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B023DE91B0E0D86000FB2E3 /* YGColorDefinition.m */; };
-		0B023E4F1B0E1401000FB2E3 /* YGColorDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B023DE91B0E0D86000FB2E3 /* YGColorDefinition.m */; };
-		0B023E501B0E1409000FB2E3 /* NSColor+randomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B023E4A1B0E131E000FB2E3 /* NSColor+randomColor.m */; };
+		0B023E8E1B0E1D3E000FB2E3 /* NSColor+randomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B023E851B0E1D36000FB2E3 /* NSColor+randomColor.m */; };
+		0B023E901B0E1D48000FB2E3 /* UIColor+randomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B023E871B0E1D36000FB2E3 /* UIColor+randomColor.m */; };
+		0B023E911B0E1D4B000FB2E3 /* YGColorDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B023E891B0E1D36000FB2E3 /* YGColorDefinition.m */; };
+		0B023E921B0E1D4B000FB2E3 /* YGColorDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B023E891B0E1D36000FB2E3 /* YGColorDefinition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +44,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0B023DA31B0DE1DF000FB2E3 /* randomColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = randomColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B023DA91B0DE1DF000FB2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B023DB91B0DFC61000FB2E3 /* Demo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B023DBC1B0DFC62000FB2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B023DBD1B0DFC62000FB2E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -59,24 +56,17 @@
 		0B023DE01B0DFDDD000FB2E3 /* ChooserTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooserTableController.m; sourceTree = "<group>"; };
 		0B023DE21B0DFF7C000FB2E3 /* ColorDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorDetailsViewController.h; sourceTree = "<group>"; };
 		0B023DE31B0DFF7C000FB2E3 /* ColorDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorDetailsViewController.m; sourceTree = "<group>"; };
-		0B023DE81B0E0D86000FB2E3 /* YGColorDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGColorDefinition.h; sourceTree = "<group>"; };
-		0B023DE91B0E0D86000FB2E3 /* YGColorDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGColorDefinition.m; sourceTree = "<group>"; };
 		0B023DF01B0E11B1000FB2E3 /* librandomColor-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "librandomColor-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B023E071B0E11E6000FB2E3 /* UIColor+randomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+randomColor.h"; sourceTree = "<group>"; };
-		0B023E081B0E11E6000FB2E3 /* UIColor+randomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+randomColor.m"; sourceTree = "<group>"; };
 		0B023E321B0E12EB000FB2E3 /* librandomColor-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "librandomColor-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B023E491B0E131E000FB2E3 /* NSColor+randomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+randomColor.h"; sourceTree = "<group>"; };
-		0B023E4A1B0E131E000FB2E3 /* NSColor+randomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+randomColor.m"; sourceTree = "<group>"; };
+		0B023E841B0E1D36000FB2E3 /* NSColor+randomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSColor+randomColor.h"; path = "Classes/NSColor+randomColor.h"; sourceTree = SOURCE_ROOT; };
+		0B023E851B0E1D36000FB2E3 /* NSColor+randomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSColor+randomColor.m"; path = "Classes/NSColor+randomColor.m"; sourceTree = SOURCE_ROOT; };
+		0B023E861B0E1D36000FB2E3 /* UIColor+randomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+randomColor.h"; path = "Classes/UIColor+randomColor.h"; sourceTree = SOURCE_ROOT; };
+		0B023E871B0E1D36000FB2E3 /* UIColor+randomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+randomColor.m"; path = "Classes/UIColor+randomColor.m"; sourceTree = SOURCE_ROOT; };
+		0B023E881B0E1D36000FB2E3 /* YGColorDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YGColorDefinition.h; path = Classes/YGColorDefinition.h; sourceTree = SOURCE_ROOT; };
+		0B023E891B0E1D36000FB2E3 /* YGColorDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YGColorDefinition.m; path = Classes/YGColorDefinition.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0B023DA01B0DE1DF000FB2E3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0B023DB61B0DFC61000FB2E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -105,11 +95,8 @@
 		0B023D8F1B0DE1DF000FB2E3 = {
 			isa = PBXGroup;
 			children = (
-				0B023D9A1B0DE1DF000FB2E3 /* randomColor */,
-				0B023DA71B0DE1DF000FB2E3 /* randomColorTests */,
+				0B023D9A1B0DE1DF000FB2E3 /* Classes */,
 				0B023DBA1B0DFC62000FB2E3 /* Demo-iOS */,
-				0B023DF11B0E11B1000FB2E3 /* randomColor-iOS */,
-				0B023E331B0E12EB000FB2E3 /* randomColor-OSX */,
 				0B023D991B0DE1DF000FB2E3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,7 +104,6 @@
 		0B023D991B0DE1DF000FB2E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0B023DA31B0DE1DF000FB2E3 /* randomColorTests.xctest */,
 				0B023DB91B0DFC61000FB2E3 /* Demo-iOS.app */,
 				0B023DF01B0E11B1000FB2E3 /* librandomColor-iOS.a */,
 				0B023E321B0E12EB000FB2E3 /* librandomColor-OSX.a */,
@@ -125,29 +111,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0B023D9A1B0DE1DF000FB2E3 /* randomColor */ = {
+		0B023D9A1B0DE1DF000FB2E3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0B023DE81B0E0D86000FB2E3 /* YGColorDefinition.h */,
-				0B023DE91B0E0D86000FB2E3 /* YGColorDefinition.m */,
+				0B023E841B0E1D36000FB2E3 /* NSColor+randomColor.h */,
+				0B023E851B0E1D36000FB2E3 /* NSColor+randomColor.m */,
+				0B023E861B0E1D36000FB2E3 /* UIColor+randomColor.h */,
+				0B023E871B0E1D36000FB2E3 /* UIColor+randomColor.m */,
+				0B023E881B0E1D36000FB2E3 /* YGColorDefinition.h */,
+				0B023E891B0E1D36000FB2E3 /* YGColorDefinition.m */,
 			);
+			name = Classes;
 			path = randomColor;
-			sourceTree = "<group>";
-		};
-		0B023DA71B0DE1DF000FB2E3 /* randomColorTests */ = {
-			isa = PBXGroup;
-			children = (
-				0B023DA81B0DE1DF000FB2E3 /* Supporting Files */,
-			);
-			path = randomColorTests;
-			sourceTree = "<group>";
-		};
-		0B023DA81B0DE1DF000FB2E3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0B023DA91B0DE1DF000FB2E3 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		0B023DBA1B0DFC62000FB2E3 /* Demo-iOS */ = {
@@ -176,24 +151,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0B023DF11B0E11B1000FB2E3 /* randomColor-iOS */ = {
-			isa = PBXGroup;
-			children = (
-				0B023E071B0E11E6000FB2E3 /* UIColor+randomColor.h */,
-				0B023E081B0E11E6000FB2E3 /* UIColor+randomColor.m */,
-			);
-			path = "randomColor-iOS";
-			sourceTree = "<group>";
-		};
-		0B023E331B0E12EB000FB2E3 /* randomColor-OSX */ = {
-			isa = PBXGroup;
-			children = (
-				0B023E491B0E131E000FB2E3 /* NSColor+randomColor.h */,
-				0B023E4A1B0E131E000FB2E3 /* NSColor+randomColor.m */,
-			);
-			path = "randomColor-OSX";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -201,30 +158,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B023E4B1B0E131E000FB2E3 /* NSColor+randomColor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0B023DA21B0DE1DF000FB2E3 /* randomColorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0B023DAF1B0DE1DF000FB2E3 /* Build configuration list for PBXNativeTarget "randomColorTests" */;
-			buildPhases = (
-				0B023D9F1B0DE1DF000FB2E3 /* Sources */,
-				0B023DA01B0DE1DF000FB2E3 /* Frameworks */,
-				0B023DA11B0DE1DF000FB2E3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = randomColorTests;
-			productName = randomColorTests;
-			productReference = 0B023DA31B0DE1DF000FB2E3 /* randomColorTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		0B023DB81B0DFC61000FB2E3 /* Demo-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B023DD91B0DFC62000FB2E3 /* Build configuration list for PBXNativeTarget "Demo-iOS" */;
@@ -286,9 +225,6 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = yageek;
 				TargetAttributes = {
-					0B023DA21B0DE1DF000FB2E3 = {
-						CreatedOnToolsVersion = 6.3.2;
-					};
 					0B023DB81B0DFC61000FB2E3 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
@@ -313,7 +249,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0B023DA21B0DE1DF000FB2E3 /* randomColorTests */,
 				0B023DB81B0DFC61000FB2E3 /* Demo-iOS */,
 				0B023DEF1B0E11B1000FB2E3 /* randomColor-iOS */,
 				0B023E311B0E12EB000FB2E3 /* randomColor-OSX */,
@@ -322,13 +257,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0B023DA11B0DE1DF000FB2E3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0B023DB71B0DFC61000FB2E3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -342,13 +270,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0B023D9F1B0DE1DF000FB2E3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0B023DB51B0DFC61000FB2E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,8 +285,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B023E4D1B0E135E000FB2E3 /* YGColorDefinition.m in Sources */,
-				0B023E091B0E11E6000FB2E3 /* UIColor+randomColor.m in Sources */,
+				0B023E911B0E1D4B000FB2E3 /* YGColorDefinition.m in Sources */,
+				0B023E901B0E1D48000FB2E3 /* UIColor+randomColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,8 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B023E501B0E1409000FB2E3 /* NSColor+randomColor.m in Sources */,
-				0B023E4F1B0E1401000FB2E3 /* YGColorDefinition.m in Sources */,
+				0B023E921B0E1D4B000FB2E3 /* YGColorDefinition.m in Sources */,
+				0B023E8E1B0E1D3E000FB2E3 /* NSColor+randomColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,38 +407,6 @@
 			};
 			name = Release;
 		};
-		0B023DB01B0DE1DF000FB2E3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = randomColorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		0B023DB11B0DE1DF000FB2E3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = randomColorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		0B023DDA1B0DFC62000FB2E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -613,14 +502,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0B023DAF1B0DE1DF000FB2E3 /* Build configuration list for PBXNativeTarget "randomColorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0B023DB01B0DE1DF000FB2E3 /* Debug */,
-				0B023DB11B0DE1DF000FB2E3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
 		0B023DD91B0DFC62000FB2E3 /* Build configuration list for PBXNativeTarget "Demo-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -628,6 +509,7 @@
 				0B023DDB1B0DFC62000FB2E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B023E011B0E11B1000FB2E3 /* Build configuration list for PBXNativeTarget "randomColor-iOS" */ = {
 			isa = XCConfigurationList;
@@ -636,6 +518,7 @@
 				0B023E031B0E11B1000FB2E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B023E431B0E12EC000FB2E3 /* Build configuration list for PBXNativeTarget "randomColor-OSX" */ = {
 			isa = XCConfigurationList;
@@ -644,6 +527,7 @@
 				0B023E451B0E12EC000FB2E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
