@@ -246,10 +246,10 @@ int RandomInRange(int bottom, int top)
 + (CGFloat) minimumBrightnessWithHue:(CGFloat) hue saturation:(CGFloat) saturation
 {
     NSArray * lowerBounds = [self colorInfo:hue].lowerBounds;
-    
-    __block CGFloat value = 0;
-    [lowerBounds enumerateObjectsUsingBlock:^(YGColorRange* range, NSUInteger idx, BOOL *stop) {
-        
+
+    for(NSUInteger idx = 0; idx < lowerBounds.count -1 ; ++idx)
+    {
+        YGColorRange * range = lowerBounds[idx];
         CGFloat s1 = range.min;
         CGFloat v1 = range.max;
         
@@ -260,12 +260,11 @@ int RandomInRange(int bottom, int top)
         {
             CGFloat m = (v2 - v1)/(s2 - s1);
             CGFloat  b = v1 - m*s1;
-            value = m*saturation + b;
-            *stop = YES;
+            return (m*saturation + b);
         }
-    }];
-    
-    return value;
+        
+    }
+    return 0;
 }
 
 
