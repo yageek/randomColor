@@ -27,9 +27,15 @@ typedef NS_ENUM(NSUInteger, UIColorHue) {
     UIColorHueRandom
 };
 @interface UIColor (randomColor)
-+ (UIColor*) randomColorWithHue:(UIColorHue) colorHue luminosity:(UIColorLuminosity) luminosity count:(NSUInteger) count;
++ (NSArray*) randomColorsWithHue:(UIColorHue) colorHue luminosity:(UIColorLuminosity) luminosity count:(NSUInteger) count;
++ (UIColor*) randomColorWithHue:(UIColorHue) colorHue luminosity:(UIColorLuminosity) luminosity;
 
 + (UIColor*) randomColor;
++ (NSArray*) randomColorsWithCount:(NSUInteger) count;
+
 + (UIColor*) randomColorWithHue:(UIColorHue) colorHue;
++ (NSArray*) randomColorsWithHue:(UIColorHue) colorHue count:(NSUInteger) count;
+
 + (UIColor*) randomColorWithLuminosity:(UIColorLuminosity) luminosity;
++ (NSArray*) randomColorsWithLuminosity:(UIColorLuminosity) luminosity count:(NSUInteger) count;
 @end

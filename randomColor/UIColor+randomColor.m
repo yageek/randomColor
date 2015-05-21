@@ -325,28 +325,57 @@ int RandomInRange(int bottom, int top)
     }
 }
 
+#pragma mark - Public Methods
 
-+ (UIColor*) randomColorWithHue:(UIColorHue) colorHue luminosity:(UIColorLuminosity) luminosity count:(NSUInteger) count
++ (NSArray*) randomColorsWithHue:(UIColorHue) colorHue luminosity:(UIColorLuminosity) luminosity count:(NSUInteger) count
 {
-    CGFloat H = [self pickHue:[self colorNameFromEnum:colorHue]];
-    CGFloat S = [self pickSaturationWithHueValue:H luminosity:luminosity monochrome:(colorHue==UIColorHueMonochrome)];
-    CGFloat B = [self pickBrightnessWitHueValue:H saturationValue:S luminosity:luminosity];
+    NSMutableArray * colors = [NSMutableArray arrayWithCapacity:count];
     
-    return [UIColor colorWithHue:H saturation:S brightness:B alpha:1.0f];
+    for(NSUInteger i = 0; i < count ; ++i)
+    {
+        [colors addObject:[self randomColorWithHue:colorHue luminosity:luminosity]];
+    }
+    return colors;
+}
+
++ (NSArray*) randomColorsWithCount:(NSUInteger) count
+{
+   return [self randomColorsWithHue:UIColorHueRandom luminosity:UIColorLuminosityRandom count:count];
+}
+
++ (NSArray*) randomColorsWithHue:(UIColorHue) colorHue count:(NSUInteger) count
+{
+   return [self randomColorsWithHue:colorHue luminosity:UIColorLuminosityRandom count:count];
+}
+
++ (NSArray*) randomColorsWithLuminosity:(UIColorLuminosity) luminosity count:(NSUInteger) count
+{
+   return [self randomColorsWithHue:UIColorHueRandom luminosity:luminosity count:count];
+}
+
++ (UIColor*) randomColorWithHue:(UIColorHue) colorHue luminosity:(UIColorLuminosity) luminosity
+{
+        CGFloat H = [self pickHue:[self colorNameFromEnum:colorHue]];
+        CGFloat S = [self pickSaturationWithHueValue:H luminosity:luminosity monochrome:(colorHue==UIColorHueMonochrome)];
+        CGFloat B = [self pickBrightnessWitHueValue:H saturationValue:S luminosity:luminosity];
+        
+        return [UIColor colorWithHue:(H/360.0f) saturation:(S/100.0f) brightness:(B/100.0f) alpha:1.0f];
 }
 
 + (UIColor*) randomColor
 {
-    return [self randomColorWithHue:UIColorHueRandom luminosity:UIColorLuminosityRandom count:0];
+    return [self randomColorWithHue:UIColorHueRandom luminosity:UIColorLuminosityRandom];
 }
 + (UIColor*) randomColorWithHue:(UIColorHue) colorHue
 {
-   return [self randomColorWithHue:colorHue luminosity:UIColorLuminosityRandom count:0];
+   return [self randomColorWithHue:colorHue luminosity:UIColorLuminosityRandom];
 }
+
+
+
 + (UIColor*) randomColorWithLuminosity:(UIColorLuminosity) luminosity
 {
-    return [self randomColorWithHue:UIColorHueRandom luminosity:luminosity count:0];
-
+    return [self randomColorWithHue:UIColorHueRandom luminosity:luminosity];
 }
 
 @end
