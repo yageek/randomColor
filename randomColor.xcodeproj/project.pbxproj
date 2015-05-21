@@ -17,6 +17,7 @@
 		0B023DE11B0DFDDD000FB2E3 /* ChooserTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B023DE01B0DFDDD000FB2E3 /* ChooserTableController.m */; };
 		0B023DE41B0DFF7C000FB2E3 /* ColorDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B023DE31B0DFF7C000FB2E3 /* ColorDetailsViewController.m */; };
 		0B023DE71B0E0219000FB2E3 /* librandomColor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B023D981B0DE1DF000FB2E3 /* librandomColor.a */; };
+		0B023DEA1B0E0D86000FB2E3 /* YGColorDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B023DE91B0E0D86000FB2E3 /* YGColorDefinition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		0B023DE01B0DFDDD000FB2E3 /* ChooserTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooserTableController.m; sourceTree = "<group>"; };
 		0B023DE21B0DFF7C000FB2E3 /* ColorDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorDetailsViewController.h; sourceTree = "<group>"; };
 		0B023DE31B0DFF7C000FB2E3 /* ColorDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorDetailsViewController.m; sourceTree = "<group>"; };
+		0B023DE81B0E0D86000FB2E3 /* YGColorDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGColorDefinition.h; sourceTree = "<group>"; };
+		0B023DE91B0E0D86000FB2E3 /* YGColorDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGColorDefinition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +121,9 @@
 		0B023D9A1B0DE1DF000FB2E3 /* randomColor */ = {
 			isa = PBXGroup;
 			children = (
-				0B023DB21B0DE209000FB2E3 /* UIColor+randomColor.h */,
-				0B023DB31B0DE209000FB2E3 /* UIColor+randomColor.m */,
+				0B023DEB1B0E0F0F000FB2E3 /* iOS */,
+				0B023DE81B0E0D86000FB2E3 /* YGColorDefinition.h */,
+				0B023DE91B0E0D86000FB2E3 /* YGColorDefinition.m */,
 			);
 			path = randomColor;
 			sourceTree = "<group>";
@@ -164,6 +168,15 @@
 				0B023DBD1B0DFC62000FB2E3 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0B023DEB1B0E0F0F000FB2E3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0B023DB21B0DE209000FB2E3 /* UIColor+randomColor.h */,
+				0B023DB31B0DE209000FB2E3 /* UIColor+randomColor.m */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B023DEA1B0E0D86000FB2E3 /* YGColorDefinition.m in Sources */,
 				0B023DB41B0DE209000FB2E3 /* UIColor+randomColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

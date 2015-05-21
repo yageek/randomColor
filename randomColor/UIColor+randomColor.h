@@ -7,26 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-typedef NS_ENUM(NSUInteger, UIColorLuminosity) {
-    UIColorLuminosityDark,
-    UIColorLuminosityBright,
-    UIColorLuminosityLight,
-    UIColorLuminosityRandom
-};
-
-typedef NS_ENUM(NSUInteger, UIColorHue) {
-    UIColorHueRed,
-    UIColorHueOrange,
-    UIColorHueYellow,
-    UIColorHueGreen,
-    UIColorHueBlue,
-    UIColorHuePurple,
-    UIColorHuePink,
-    UIColorHueMonochrome,
-    UIColorHueRandom
-};
-
+#import "YGColorDefinition.h"
 @interface UIColor (randomColor)
 /**
  *  Generate an array of colors with specified hue and luminosity value
@@ -37,7 +18,7 @@ typedef NS_ENUM(NSUInteger, UIColorHue) {
  *
  *  @return An array of `UIColor` instances
  */
-+ (NSArray*) randomColorsWithHue:(UIColorHue) colorHue luminosity:(UIColorLuminosity) luminosity count:(NSUInteger) count;
++ (NSArray*) randomColorsWithHue:(YGColorHue) colorHue luminosity:(YGColorLuminosity) luminosity count:(NSUInteger) count;
 /**
  *  Generate a color with specified hue and luminosity value
  *
@@ -46,17 +27,17 @@ typedef NS_ENUM(NSUInteger, UIColorHue) {
  *
  *  @return An instance of `UIColor`
  */
-+ (UIColor*) randomColorWithHue:(UIColorHue) colorHue luminosity:(UIColorLuminosity) luminosity;
++ (UIColor*) randomColorWithHue:(YGColorHue) colorHue luminosity:(YGColorLuminosity) luminosity;
 
 /**
- *  Generate a random color. Same as invoking `randomColorWithHue:luminosity:` with `UIColorHueRandom` and `UIColorLuminosityRandom`
+ *  Generate a random color. Same as invoking `randomColorWithHue:luminosity:` with `YGColorHueRandom` and `YGColorLuminosityRandom`
  *
  *  @return A `UIColor` instance
  */
 + (UIColor*) randomColor;
 /**
  *  Generate an array of random colors. 
- *  Same as invoking `randomColorsWithHue:luminosity:count:` with `UIColorHueRandom` and `UIColorLuminosityRandom`
+ *  Same as invoking `randomColorsWithHue:luminosity:count:` with `YGColorHueRandom` and `YGColorLuminosityRandom`
  *
  *  @param count The number of colors to generate
  *
@@ -66,40 +47,40 @@ typedef NS_ENUM(NSUInteger, UIColorHue) {
 
 /**
  *  Generate a randomcolor with a specified hue value.  
- *  Same as invoking `randomColorWithHue:luminosity:` with a luminosity equals to `UIColorLuminosityRandom`
+ *  Same as invoking `randomColorWithHue:luminosity:` with a luminosity equals to `YGColorLuminosityRandom`
  *
  *  @param colorHue The wanted hue color
  *
  *  @return A `UIColor` instance
  */
-+ (UIColor*) randomColorWithHue:(UIColorHue) colorHue;
++ (UIColor*) randomColorWithHue:(YGColorHue) colorHue;
 /**
  *  Generate an array of random colors with a specified hue value.  Same as invoking
- * `randomColorsWithHue:luminosity:count:` with with a luminosity equals to `UIColorLuminosityRandom`
+ * `randomColorsWithHue:luminosity:count:` with with a luminosity equals to `YGColorLuminosityRandom`
  *
  *  @param colorHue The wanted hue value
  *  @param count    The number of colors to generate
  *
  *  @return An array of `UIColor` instances
  */
-+ (NSArray*) randomColorsWithHue:(UIColorHue) colorHue count:(NSUInteger) count;
++ (NSArray*) randomColorsWithHue:(YGColorHue) colorHue count:(NSUInteger) count;
 
 /**
  *  Generate a randomcolor with a specified luminosity value.
- *  Same as invoking `randomColorWithHue:luminosity:` with a hue equals to `UIColorHueRandom`
+ *  Same as invoking `randomColorWithHue:luminosity:` with a hue equals to `YGColorHueRandom`
  *  @param luminosity The wanted luminosity value
  *
  *  @return  A `UIColor` instance
  */
-+ (UIColor*) randomColorWithLuminosity:(UIColorLuminosity) luminosity;
++ (UIColor*) randomColorWithLuminosity:(YGColorLuminosity) luminosity;
 /**
  *  Generate an array of random colors with a specified luminosity value.  Same as invoking
- * `randomColorsWithHue:luminosity:count:` with with a hueColor equals to `UIColorHueRandom`
+ * `randomColorsWithHue:luminosity:count:` with with a hueColor equals to `YGColorHueRandom`
  *
  *  @param luminosity The wanted luminosity
  *  @param count      The number of color to generate
  *
  *  @return An array of `UIColor` instances
  */
-+ (NSArray*) randomColorsWithLuminosity:(UIColorLuminosity) luminosity count:(NSUInteger) count;
++ (NSArray*) randomColorsWithLuminosity:(YGColorLuminosity) luminosity count:(NSUInteger) count;
 @end

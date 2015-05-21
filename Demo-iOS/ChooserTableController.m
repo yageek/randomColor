@@ -33,38 +33,38 @@
     colorDetailsController.colors = [UIColor randomColorsWithHue:[self colorHueFromString:self.colorString] luminosity:[self colorLuminosityFromString:self.luminosityString] count:100];
 }
 
-- (UIColorHue) colorHueFromString:(NSString*) string
+- (YGColorHue) colorHueFromString:(NSString*) string
 {
     if([string isEqualToString:@"red"])
-        return UIColorHueRed;
+        return YGColorHueRed;
     else if([string isEqualToString:@"orange"])
-        return UIColorHueOrange;
+        return YGColorHueOrange;
     if ([string isEqualToString:@"green"])
-        return UIColorHueGreen;
+        return YGColorHueGreen;
     if([string isEqualToString:@"blue"])
-        return UIColorHueBlue;
+        return YGColorHueBlue;
     if([string isEqualToString:@"yellow"])
-        return UIColorHueYellow;
+        return YGColorHueYellow;
     if([string isEqualToString:@"purple"])
-        return UIColorHuePurple;
+        return YGColorHuePurple;
     if([string isEqualToString:@"monochrome"])
-        return UIColorHueMonochrome;
+        return YGColorHueMonochrome;
     if([string isEqualToString:@"pink"])
-        return UIColorHuePink;
+        return YGColorHuePink;
 
-    return UIColorHueRandom;
+    return YGColorHueRandom;
 }
 
-- (UIColorLuminosity) colorLuminosityFromString:(NSString*) string
+- (YGColorLuminosity) colorLuminosityFromString:(NSString*) string
 {
     if([string isEqualToString:@"dark"])
-        return UIColorLuminosityDark;
+        return YGColorLuminosityDark;
     else if([string isEqualToString:@"light"])
-        return UIColorLuminosityLight;
+        return YGColorLuminosityLight;
     if ([string isEqualToString:@"bright"])
-        return UIColorLuminosityBright;
+        return YGColorLuminosityBright;
 
-    return UIColorLuminosityRandom;
+    return YGColorLuminosityRandom;
 
     
 }
