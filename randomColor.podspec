@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "http://twitter.com/yageek"
   s.ios.deployment_target = "5.0"
   s.osx.deployment_target = "10.7"
-  s.source       = { :git => "https://github.com/yageek/randomColor.git", :branch => :develop }
+  s.source       = { :git => "https://github.com/yageek/randomColor.git", :tag => "1.0.0" }
   s.osx.source_files  = "Classes/YGColorDefinition.{h,m}", "Classes/OSX/**/*.{h,m}"
   s.ios.source_files  = "Classes/YGColorDefinition.{h,m}", "Classes/iOS/**/*.{h,m}"
   s.osx.public_header_files = "Classes/YGColorDefinition.h", "Classes/OSX/**/*.h"
