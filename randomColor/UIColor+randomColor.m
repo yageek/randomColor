@@ -42,6 +42,10 @@ static char kYGColorDictionary;
     return [[[self class] alloc] initWithMin:min max:max];
 }
 
+- (NSString*) description
+{
+    return [NSString stringWithFormat:@"<%p:%@> min:%f max:%f", self, NSStringFromClass([self class]), self.min, self.max];
+}
 @end
 
 #pragma mark - YGColorDefinition
