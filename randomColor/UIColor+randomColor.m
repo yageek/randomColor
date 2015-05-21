@@ -358,7 +358,8 @@ int RandomInRange(int bottom, int top)
         CGFloat H = [self pickHue:[self colorNameFromEnum:colorHue]];
         CGFloat S = [self pickSaturationWithHueValue:H luminosity:luminosity monochrome:(colorHue==UIColorHueMonochrome)];
         CGFloat B = [self pickBrightnessWitHueValue:H saturationValue:S luminosity:luminosity];
-        
+    
+
         return [UIColor colorWithHue:(H/360.0f) saturation:(S/100.0f) brightness:(B/100.0f) alpha:1.0f];
 }
 
