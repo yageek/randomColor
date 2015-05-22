@@ -1,9 +1,9 @@
-[![Version](http://img.shields.io/cocoapods/v/randomColor.svg?style=flat)](http://cocoapods.org/?q=randomColor) [![Platform](http://img.shields.io/cocoapods/p/randomColor.svg?style=flat)](http://cocoapods.org/?q=randomColor) [![License](http://img.shields.io/cocoapods/l/randomColor.svg?style=flat)](LICENSE)
+[![Version](http://img.shields.io/cocoapods/v/randomColor.svg?style=flat)](http://cocoapods.org/?q=randomColor) [![Platform](http://img.shields.io/cocoapods/p/randomColor.svg?style=flat)](http://cocoapods.org/?q=randomColor) [![License](http://img.shields.io/cocoapods/l/randomColor.svg?style=flat)](LICENSE.md)
 
 # Random Color Objective-C
 
 Inspired by David Merfield's [randomColor.js](https://github.com/davidmerfield/randomColor)
-and the [Swift port](https://github.com/onevcat/RandomColorSwift) by Wei Wang. 
+and the [Swift port](https://github.com/onevcat/RandomColorSwift) by Wei Wang.
 
 ## Cocoapods
 
